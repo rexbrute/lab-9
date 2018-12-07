@@ -1,0 +1,90 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// 1
+
+/*int main()
+{
+    int n;
+    printf("n=");
+    scanf("%d",&n);
+    printf("%d", 1<<n);
+    return 0;
+}*/
+
+// 2
+
+/*int main()
+{
+    int n;
+    printf("n=");
+    scanf("%d",&n);
+    printf("%d",n<<3);
+    return 0;
+}*/
+
+// 3
+
+/*int main()
+{
+    int n;
+    printf("n=");
+    scanf("%d",&n);
+    printf("%d",n>>3);
+    return 0;
+}*/
+
+// 4
+
+/*int main()
+{
+    int n,k=0;
+    printf("n=");
+    scanf("%d",&n);
+    while(n)
+    {
+        if(n&1)
+            k++;
+        n=n>>1;
+    }
+    printf("%d",k);
+    return 0;
+}*/
+
+// 5
+
+/*int main()
+{
+    int n,k=0,poz=0;
+    printf("n=");
+    scanf("%d",&n);
+    while(n)
+    {
+        if(n&1)
+            poz=k;
+        k++;
+        n=n>>1;
+    }
+    printf("%d",poz);
+    return 0;
+}*/
+
+// 6
+
+int main()
+{
+    int n,k=0;
+    printf("n=");
+    scanf("%d",&n);
+    while(n)
+    {
+        if(n&1)
+            k++;
+        n=n>>1;
+    }
+    if(k==1)
+        printf("n este o putere a lui 2");
+    else
+        printf("n nu este o putere a lui 2");
+    return 0;
+}
